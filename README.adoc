@@ -1,0 +1,7 @@
+= Test
+
+This repository will be to show some Test Practices and Frameworks in Java Basis like:
+
+  - BDD
+  - Automation
+  - ...
