@@ -1,0 +1,9 @@
+= BDD with Cucumber
+
+We are gonna build a sample Java project with Cucumber, TestNG, and Maven to show the simple concepts about Behaviour-Driven Design.
+
+To learn a really good approach about BDD, please, refer to https://dzone.com/articles/feature-mapping-a-simpler-path-from-stories-to-exe[Feature Mapping Article^]
+
+  - To build the project run the following command: `mvn clean install`
+  - Run the following command to run the tests: `mvn verify`
+  - The reports will be generated as we have defined on `pom.xml`
