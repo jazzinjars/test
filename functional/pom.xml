@@ -19,7 +19,7 @@
 
     <modules>
 	<module>user-service</module>
-	<!--<module>user-details-service-functional-tests</module>-->
+	<module>user-service-functional-test</module>
     </modules>
 
     <properties>
