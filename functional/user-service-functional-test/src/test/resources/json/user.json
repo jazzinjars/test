@@ -1,0 +1,10 @@
+{
+  "userDetails": {
+    "firstName": "Jazz",
+    "lastName": "Injars"
+  },
+  "userContacts": {
+    "email": "test@test.com",
+    "phone": "+3484551136545"
+  }
+}
