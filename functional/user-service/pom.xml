@@ -15,6 +15,10 @@
 
     <name>User details service</name>
 
+    <properties>
+	<mariadb.client.version>2.3.0</mariadb.client.version>
+    </properties>
+
     <dependencies>
 	<dependency>
 	    <groupId>org.springframework.boot</groupId>
@@ -32,7 +36,7 @@
 	<dependency>
 	    <groupId>org.mariadb.jdbc</groupId>
 	    <artifactId>mariadb-java-client</artifactId>
-	    <version>2.3.0</version>
+	    <version>${mariadb.client.version}</version>
 	</dependency>
     </dependencies>
 

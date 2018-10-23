@@ -11,7 +11,14 @@
 
     <artifactId>user-service-functional-test</artifactId>
 
+    <properties>
+	<spring.cloud.version>2.0.1.RELEASE</spring.cloud.version>
+	<embedded.maria.version>1.12</embedded.maria.version>
+	<wiremock.version>2.19.0</wiremock.version>
+    </properties>
+
     <dependencies>
+	<!-- TEST DEPENDENCIES -->
 	<dependency>
 	    <groupId>com.jazzinjars</groupId>
 	    <artifactId>user-service</artifactId>
@@ -26,23 +33,21 @@
 	<dependency>
 	    <groupId>org.springframework.cloud</groupId>
 	    <artifactId>spring-cloud-context</artifactId>
-	    <version>2.0.1.RELEASE</version>
+	    <version>${spring.cloud.version}</version>
 	    <scope>test</scope>
 	</dependency>
-
 	<dependency>
 	    <groupId>com.playtika.testcontainers</groupId>
 	    <artifactId>embedded-mariadb</artifactId>
-	    <version>1.12</version>
+	    <version>${embedded.maria.version}</version>
 	    <scope>test</scope>
 	</dependency>
 	<dependency>
 	    <groupId>com.github.tomakehurst</groupId>
 	    <artifactId>wiremock</artifactId>
-	    <version>2.19.0</version>
+	    <version>${wiremock.version}</version>
 	    <scope>test</scope>
 	</dependency>
-
 	<dependency>
 	    <groupId>io.rest-assured</groupId>
 	    <artifactId>rest-assured</artifactId>

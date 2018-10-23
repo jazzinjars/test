@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options;
+import static org.springframework.util.ResourceUtils.getFile;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(
@@ -41,7 +42,7 @@ public abstract class BaseFunctionalTest {
 
     public static String readFile(String path) {
         try {
-            return FileUtils.readFileToString(FileUtils.getFile("classpath:" + path), Charset.defaultCharset());
+            return FileUtils.readFileToString(getFile("classpath:" + path), Charset.defaultCharset());
         } catch (IOException e) {
             throw new RuntimeException("File cannot be read");
         }
